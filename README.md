@@ -1,70 +1,46 @@
-# React Coding Challenge
+# Getting Started with Create React App
 
-At aspaara a squad of superheroes work on giving superpowers to planning teams.
-Through our product dashboard we give insights into data – a true super-vision
-superpower. Join forces with us and build a dashboard of the future!
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![aspaara superhero](aspaara_superhero.png)
+## Available Scripts
 
-## Goal
+In the project directory, you can run:
 
-Create a simple single-page application that allows a planner to get insights
-into client and planning information.
+### `yarn start`
 
-You will find the corresponding data to display in `planning.json`, which
-contains around 10k records.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Requirements
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Within the application, it should be possible to
+### `yarn test`
 
-* browse all the data that is provided in `planning.json` in a detailed view
-  (for example table view)
-* get an overview of the data with some statistics, for at least on of the
-  following attributes:
-  * booking grade
-  * office city
-  * skills
-  * industry
-* drill down into subsets by means of filtering and/or sorting
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Data Model
+### `yarn build`
 
-* ID: integer (unique, required)
-* Original ID: string (unique, required)
-* Talent ID: string (optional)
-* Talent Name: string (optional)
-* Talent Grade: string (optional)
-* Booking Grade: string (optional)
-* Operating Unit: string (required)
-* Office City: string (optional)
-* Office Postal Code: string (required)
-* Job Manager Name: string (optional)
-* Job Manager ID: string (optional)
-* Total Hours: float (required)
-* Start Date: datetime (required)
-* End Date: datetime (required)
-* Client Name: string (optional)
-* Client ID: string (required)
-* Industry: string (optional)
-* Required Skills: array of key-value pair (optional)
-* Optional Skills: array of key-value pair (optional)
-* Is Unassigned: boolean
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Tech Stack
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-* JavaScript or TypeScript
-* React
-* Node (if required)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Submission
+### `yarn eject`
 
-* Please fork the project, commit and push your implementation and add
-  `sundara.amancharla@aspaara.com` as a contributor.
-* Please update the README with any additional details or steps that are
-  requried to run your implementation.
-* We understand that there is a limited amount of time, so it does not have to
-  be perfect or 100% finished. Plan to spend no more than 2-3 hours on it.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-For any additional questions on the task please feel free to email
-`sundara.amancharla@aspaara.com`.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
