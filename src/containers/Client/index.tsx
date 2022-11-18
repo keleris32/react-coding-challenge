@@ -1,5 +1,4 @@
 import styles from './Client.module.scss';
-// import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import data from '../../data/planning.json';
 import { IData } from '../../types/dataType';
 import { Table } from '../../components';
