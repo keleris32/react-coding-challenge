@@ -6,9 +6,11 @@ import { Table } from '../../components';
 const Client = () => {
   const rows: IData[] | any = data;
 
+  const rowsPerPage = 20;
+
   return (
     <div className={styles.container}>
-      <Table data={rows} rowsPerPage={20} />
+      <Table data={rows} rowsPerPage={rowsPerPage} />
     </div>
   );
 };
