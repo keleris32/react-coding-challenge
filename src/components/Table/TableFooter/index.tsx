@@ -5,7 +5,7 @@ interface IProps {
   setActivePage: React.Dispatch<React.SetStateAction<number>>;
   activePage: number;
   totalPages: number;
-  count: number;
+  totalRows: number;
   rowsPerPage: number;
 }
 
@@ -13,11 +13,12 @@ const TableFooter = ({
   setActivePage,
   activePage,
   totalPages,
-  count,
+  totalRows,
   rowsPerPage,
 }: IProps) => {
   const beginning = activePage === 1 ? 1 : rowsPerPage * (activePage - 1) + 1;
-  const end = activePage === totalPages ? count : beginning + rowsPerPage - 1;
+  const end =
+    activePage === totalPages ? totalRows : beginning + rowsPerPage - 1;
 
   return (
     <div className={styles.container}>
@@ -48,7 +49,7 @@ const TableFooter = ({
         Page {activePage} of {totalPages}
       </p>
       <p>
-        Rows: {beginning === end ? end : `${beginning} - ${end}`} of {count}
+        Rows: {beginning === end ? end : `${beginning} - ${end}`} of {totalRows}
       </p>
     </div>
   );

@@ -7,7 +7,7 @@ const sliceData = (data: IData[], activePage: number, rowsPerPage: number) => {
 
 const useTable = (data: IData[], activePage: number, rowsPerPage: number) => {
   const [calculatedRows, setCalculatedRows] = useState<IData[]>([]);
-  const count = data.length;
+  const totalRows = data.length;
   const totalPages = Math.ceil(data.length / rowsPerPage);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const useTable = (data: IData[], activePage: number, rowsPerPage: number) => {
     setCalculatedRows([...slicedData]);
   }, [data, activePage, rowsPerPage, setCalculatedRows]);
 
-  return { calculatedRows, count, totalPages };
+  return { calculatedRows, totalRows, totalPages };
 };
 
 export default useTable;

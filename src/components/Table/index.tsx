@@ -28,7 +28,7 @@ const columns = [
 
 const Table = ({ data, rowsPerPage }: IProps) => {
   const [activePage, setActivePage] = useState(1);
-  const { calculatedRows, count, totalPages } = useTable(
+  const { calculatedRows, totalRows, totalPages } = useTable(
     data,
     activePage,
     rowsPerPage
@@ -78,7 +78,7 @@ const Table = ({ data, rowsPerPage }: IProps) => {
       <TableFooter
         activePage={activePage}
         setActivePage={setActivePage}
-        count={count}
+        totalRows={totalRows}
         totalPages={totalPages}
         rowsPerPage={rowsPerPage}
       />
